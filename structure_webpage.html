@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>structuring of website</title>
+    <style>
+      /* *{
+        margin:0;
+        padding: 0;
+    } */
+
+    /* navbar within site logo css  */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 2px solid black;
+      }
+
+      li {
+        float: right;
+      }
+      li h1 {
+        margin-left: 15px;
+      }
+
+      li a {
+        display: block;
+        color: rgb(8, 1, 1);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+   
+      /* first container desing css  */
+      .container1 {
+        border: 2px solid black;
+        margin-top: 10px;
+        height: auto;
+      }
+      .container1 > h1 {
+        border: 1px solid red;
+       
+      }
+      .innercontent {
+        padding: 15px;
+      }
+
+      /* second container within three empty subcontainer  */
+      .container2 {
+        height: auto;
+        border: 1px solid black;
+        margin: 5px;
+        margin-top: 18px;
+        display: flex;
+      }
+      .container2 > div {
+        height: 90px;
+        border: 1px solid rgb(158, 40, 40);
+        justify-content: space-around;
+        margin: 5px;
+        width: 100%;
+      }
+
+
+        /* second container within three with heading,para,button subcontainer  */
+      .container3 {
+        height: auto;
+        border: 1px solid black;
+        margin-top: 5px;
+        display: flex;
+        width: 100%;
+      }
+      .container3 > div {
+        height: auto;
+        border: 1px solid rgb(158, 40, 40);
+        justify-content: space-around;
+        margin: 10px;
+        width: 100%;
+      }
+      .container3 > div {
+        text-align: center;
+      }
+
+      /* container 4 within heading input button  */
+      .container4 {
+        height: auto;
+        margin-top: 8px;
+        border: 1px solid green;
+      }
+      .subcontainer4 {
+        display: flex;
+        justify-content: center;
+      }
+      .subcontainer4 > h2,
+      input,
+      button {
+        padding: 5px;
+        margin: 5px;
+      }
+
+
+      /* footer design  */
+      .footer {
+        border: 1px solid red;
+        margin-top: 8px;
+        height: auto;
+      }
+      .footer > p {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <!-- navbar desing responsive   -->
+
+    <div class="nav">
+      <ul>
+        <li><a href="#home">link</a></li>
+        <li><a href="#news">link</a></li>
+        <li><a href="#contact">link</a></li>
+        <li style="float: left"><h1>Site logo</h1></li>
+      </ul>
+    </div>
+
+    <!-- container1 with h1,p, button desing responsive -->
+
+    <div class="container1">
+      <div class="innercontent">
+        <h1>heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          nihil, quia illum debitis reprehenderit veniam quos asperiores
+          laboriosam eligendi aliquid.
+        </p>
+        <button>learn more</button>
+      </div>
+    </div>
+
+     <!-- container2 -->
+    <div class="container2">
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+
+      <div class="div3">div3</div>
+    </div>
+
+    <!-- container3 -->
+    <div class="container3">
+      <div class="div1">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+          hic non, illo quos quibusdam placeat!
+        </p>
+        <a href="#">link</a>
+      </div>
+
+      <div class="div2">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+          hic non, illo quos quibusdam placeat!
+        </p>
+        <a href="#">link</a>
+      </div>
+
+      <div class="div3">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+          hic non, illo quos quibusdam placeat!
+        </p>
+        <a href="#">link</a>
+      </div>
+    </div>
+
+
+    <!-- container4  -->
+
+    <div class="container4">
+      <div class="subcontainer4">
+        <h2>Subscribe Us</h2>
+        <input type="text" placeholder="text-box" />
+        <!-- <input type="submit" value="Submit"> -->
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <div class="footer">
+      <p>Copyright&copy;2022</p>
+      <p style="float: right">CEDCOSS Technologies</p>
+    </div>
+  </body>
+</html>
